@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Survey Form Project</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1 id="title">FreeCodeCamp Survey Form</h1>
+
+
+
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+
+
+        <form action="/survey" id="survey-form">
+            <div class="surv">
+                <label for="name" id="name-label">Name </label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+
+            <div class="surv">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+
+            <div class="surv">
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" placeholder="Age" min="0" max="100">
+            </div>
+
+
+            <div class="surv">
+                <label for="dropdown">Which option best describes your current role?</label>
+                <select name="role" id="dropdown" placeholder="Select current role">
+                    <option value="stud">Student</option>
+                    <option value="ftj">Full time job</option>
+                    <option value="pnts">Perfer not to say</option>
+                    <option value="oth">Other</option>
+                </select>
+            </div>
+
+
+            <div class="surv">
+                <p>Would you recommend FreeCodeCamp to a friend?</p>
+                <div>
+                    <input type="radio" id="definately" name="recc" value="definately">
+                    <label for="definately">Definately</label>
+                </div>
+                <div>
+                    <input type="radio" id="maybe" name="recc" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+                <div>
+                    <input type="radio" id="not-sure" name="recc" value="not-sure">
+                    <label for="not-sure">Not sure</label>
+                </div>
+            </div>
+
+
+            <div class="surv">
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <div>
+                    <input type="checkbox" id="fep" name="fep">
+                    <label for="fep">Front-end Projects</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bep" name="bep">
+                    <label for="bep">Back-end Projects</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ked" name="ked">
+                    <label for="ked">Data Visualization</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="nity" name="nity">
+                    <label for="nity">Community</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="her" name="her">
+                    <label for="her">Help room</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="forum" name="forum">
+                    <label for="forum">Forum</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="addc" name="addc">
+                    <label for="addc">Additional courses</label>
+                </div>
+            </div>
+
+
+
+            <div class="surv">
+                <label for="area">Any comments or suggestions?</label>
+                <textarea name="area" id="area" cols="30" rows="10"
+                    placeholder="Enter your comments here..."></textarea>
+            </div>
+
+
+            <button id="submit">Submit</button>
+        </form>
+
+
+    </main>
+
+</body>
+
+</html>
