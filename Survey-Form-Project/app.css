@@ -1,0 +1,12 @@
+main {
+    background-color: #eaac8b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.surv {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+}
